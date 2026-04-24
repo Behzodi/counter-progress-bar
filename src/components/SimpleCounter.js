@@ -21,19 +21,18 @@ function SimpleCounter() {
             </Progress>
           </Col>
         </Row>
-        <Col sm="20" className="">
-        <Row xs={3} className="justify-content-center align-items-center">
+        <Row className="justify-content-center align-items-center">
           <Col className="text-end">
             <Button
               className="bg-light text-dark border-0 custom-btn rounded-circle me-2"
               size="sm"
             >
               <FaMinus />
-            </Button>{" "}
-            Decrement
+            </Button>
+            
           </Col>
-          <Col sm="2" className="text-end">
-            <Input type="number" className="custom-form" max='100' maxLength='3' />
+          <Col md="3" lg="1">
+            <Input type="number" className="custom-form mx-auto" max="100" maxLength="3" />
           </Col>
           <Col className="text-start">
             <Button
@@ -41,11 +40,10 @@ function SimpleCounter() {
               size="sm"
             >
               <FaPlus />
-            </Button>{" "}
-            Increment
+            </Button>
+            
           </Col>
         </Row>
-        </Col>
       </Container>
     </div>
   );
